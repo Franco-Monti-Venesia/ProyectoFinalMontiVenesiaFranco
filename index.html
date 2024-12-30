@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gastos del Mes | Mejorado</title>
+    <link rel="stylesheet" href="CSS/styles.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <button id="toggle-tema" class="tema__btn">
+            <span class="material-icons" id="tema-icono">light_mode</span>
+        </button>
+        <header>
+            <h1>Gastos del Mes</h1>
+            <h5>Mejorado</h5>
+        </header>
+        <main>
+            <section class="section__form">
+                <h2>Añadir Producto</h2>
+                <form id="producto__form">
+                    <label for="producto__nombre">Nombre:</label>
+                    <input type="text" id="producto__nombre" placeholder="Ej. Frutas" required>
+                    <label for="producto__precio">Precio:</label>
+                    <input type="number" id="producto__precio" min="0.01" step="0.01" placeholder="Ej. 50" required>
+                    <label for="producto__cantidad">Cantidad:</label>
+                    <input type="number" id="producto__cantidad" min="1" placeholder="Ej. 3" required>
+                    <label for="producto__categoria">Categoría:</label>
+                    <select id="producto__categoria" required>
+                        <option value="Alimentos">Alimentos</option>
+                        <option value="Hogar">Hogar</option>
+                        <option value="Tecnología">Tecnología</option>
+                    </select>
+                    <button type="submit">Añadir a los Gastos</button>
+                </form>
+            </section>
+            <section class="section__carta">
+                <h2>Resumen de los Gastos</h2>
+                <input type="text" id="buscador" placeholder="Buscar producto...">
+                <ul id="carta__items"></ul>
+                <p id="carta__total">Total: $0.00</p>
+                <button id="limpiar__carrito" class="limpiar__btn">Limpiar Todo</button>
+            </section>
+        </main>
+    </div>
+    <!-- Librería SweetAlert -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="JS/app.js"></script>
+</body>
+</html>

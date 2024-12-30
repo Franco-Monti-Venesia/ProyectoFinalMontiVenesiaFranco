@@ -1,0 +1,178 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    background-image: url(../img/fondoblanco.webp);
+    background-size: cover; /* Asegura que la imagen cubra toda la pantalla */
+    background-position: center; /* Centra la imagen */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    background-attachment: fixed;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+header h1, header h5, section h2 {
+    color: #333;
+    transition: color 0.3s;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+section {
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #fefefe;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+label {
+    font-weight: bold;
+    color: #555;
+}
+
+input {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+button {
+    padding: 10px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.section__carta ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.section__carta li {
+    padding: 5px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+#carta__total {
+    font-weight: bold;
+    font-size: 18px;
+    color: #333;
+}
+
+.section__carta .borrar__btn {
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-left: 10px;
+}
+
+.section__carta .borrar__btn:hover {
+    background-color: #cc0000;
+}
+
+.limpiar__btn {
+    margin-top: 10px;
+    background-color: #da1515;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.limpiar__btn:hover {
+    background-color: #be0101;
+}
+
+.tema__btn {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 24px;
+    z-index: 10;
+    margin: 0;
+    padding: 8px 8px 4px 8px;
+}
+
+.tema__btn span {
+    font-size: 32px;
+    color: #333;
+    transition: color 0.3s;
+}
+
+.tema__btn:hover span {
+    color: #fff;
+}
+
+.tema__btn:hover {
+    background-color: #333;
+}
+
+body.dark-mode {
+    background-color: #333;
+    color: #fff;
+    background-image: url(../img/fondonegro.webp);
+    background-size: cover; /* Asegura que la imagen cubra toda la pantalla */
+    background-position: center; /* Centra la imagen */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    background-attachment: fixed;
+}
+
+body.dark-mode .container {
+    background: #444;
+}
+
+body.dark-mode header h1, body.dark-mode header h5, body.dark-mode section {
+    color: #fff;
+}
+
+body.dark-mode .tema__btn span {
+    color: #fff;
+}
+
+body.dark-mode .tema__btn:hover {
+    background-color: #fff;
+}
+
+body.dark-mode .tema__btn:hover span {
+    color: #333;
+}
